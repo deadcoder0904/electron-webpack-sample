@@ -1,0 +1,26 @@
+{
+  "name": "electron-webpack-sample",
+  "version": "1.0.0",
+  "description": "Use ES Modules with Electron using Webpack",
+  "main": "dist/main.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "npm run clean && webpack",
+    "prod": "npm run clean && webpack -p",
+    "start": "electron dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "electron": "^1.8.2",
+    "html-webpack-plugin": "^2.30.1",
+    "rimraf": "^2.6.2",
+    "uglifyjs-webpack-plugin": "^1.2.0",
+    "webpack": "^3.11.0",
+    "webpack-merge": "^4.1.1"
+  }
+}
