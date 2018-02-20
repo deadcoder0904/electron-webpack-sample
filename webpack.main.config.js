@@ -1,6 +1,5 @@
 const path = require("path");
 const merge = require("webpack-merge");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 const base = require("./webpack.base.config");
 const buildPath = path.resolve(__dirname, "./dist");
@@ -20,7 +19,6 @@ const main = merge(base, {
       }
     ]
   },
-  plugins: [new UglifyJsPlugin()],
   node: {
     __dirname: false,
     __filename: false
